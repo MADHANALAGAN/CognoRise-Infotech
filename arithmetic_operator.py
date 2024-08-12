@@ -13,6 +13,8 @@ def division(number1,number2):
     return number1 / number2
 
 def floordivision(number1,number2):
+    if number2 == 0:
+        return "cannot be divided by 0"
     return number1 // number2
 
 def modulo(number1,number2):

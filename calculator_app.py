@@ -1,5 +1,6 @@
 from arithmetic_operator import *
 
+
 def calculator():
         print("*"*35)
         print("Welcome to the simple calculator!")
@@ -50,7 +51,18 @@ def calculator():
         else:
             print(f"Exponentiation of {number1} and {number2} is : {exponentiation(number1,number2)}")
         print(" ")
-        return calculator()
+        return again_calculator()
 
-calculator()      
+
+def again_calculator():
+    again=input("Do you want again_calculator say(yes/no) :").lower()
+    if again =="yes":
+          return calculator()
+    else:
+          print("THANK YOU ! for using the calculator.")
+ 
+if __name__=="__main__":
+      calculator()
+       
+      
 

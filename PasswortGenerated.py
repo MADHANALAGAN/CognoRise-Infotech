@@ -17,5 +17,5 @@ def check():
         
     except ValueError:
         print("Invalid input! Please enter numeric values")
-
-check()
+if __name__=="main":
+    check()
